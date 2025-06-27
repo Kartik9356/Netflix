@@ -1,0 +1,772 @@
+* {
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: rebeccapurple;
+    background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPOalH4IWBb-aOTZoJ9fwf_LvDhWmS-wEAlvcUZQ6K-gY7twkhdi_SlUW9qs2ElJsdPPphcDLNeDpjs78hOfoweXI3khLkJq5PNJ_mG7yxtCB4fX9rV74SkntT5M_H1uHMLgXCGB_LL7FOTp42SMJfSYw=w1545-h869-s-no-gm?authuser=0);
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.op {
+    height: inherit;
+    width: inherit;
+    opacity: 0.6;
+    background-color: black;
+}
+
+nav {
+    position: absolute;
+    top: 22px;
+    z-index: 2;
+    width: 76%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 145px;
+    height: 40px;
+}
+
+select {
+    background-color: transparent;
+    border-radius: 4px;
+    color: white;
+    padding: 6px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.sbutton {
+    padding: 8px 13px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+}
+
+.content {
+    position: absolute;
+    top: 40vh;
+    display: flex;
+    color: white;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+}
+
+.span2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.span3 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email input {
+    box-sizing: border-box;
+    height: 22px;
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid rgb(126, 125, 125);
+    border-radius: 4px;
+}
+
+.email input[type] {
+    position: relative;
+    color: white;
+    z-index: 3;
+    background-color: rgba(80, 123, 214, 0.139);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.email button {
+    background-color: #e50914;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    font-size: 28px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.line {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 7px;
+    background-color: rgb(62, 62, 62);
+}
+
+.show {
+    width: 100%;
+    height: 25vw;
+    margin: auto;
+    padding: 100px 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 39%;
+    line-height: 24px;
+}
+
+.center div {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.center span {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+.image {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 39%;
+}
+
+.image img {
+    position: relative;
+    top: 8vw;
+    z-index: 3;
+    width: 38vw;
+    height: 29vw;
+    border-right: 30px solid black;
+}
+
+.image video {
+    width: 30VW;
+    position: relative;
+    top: -15.5vw;
+    left: 5vw;
+}
+
+.image2 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 39%;
+}
+
+.image2 img {
+    width: 97%;
+}
+
+.banner {
+    display: flex;
+    border: 3px solid rgb(62, 62, 62);
+    border-radius: 13px;
+    width: 20vw;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    position: relative;
+    top: -140px;
+    left: 8.5vw;
+}
+
+.btext {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.banner :nth-child(2) {
+    width: 70%;
+    color: blue;
+}
+
+.banner p {
+    color: rgb(255, 255, 255);
+}
+
+.banner :nth-child(1) img {
+    margin: 15px 10px;
+    width: 57px;
+    height: 80px;
+}
+
+.banner :nth-child(3) img {
+    width: 60px;
+    height: 60px;
+}
+
+.centerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner :nth-child(2) {
+    width: 70%;
+}
+
+.image3 img {
+    position: relative;
+    z-index: 10;
+    width: 37vw;
+}
+
+.image3 video {
+    position: relative;
+    top: -20vw;
+    left: 6vw;
+    width: 24vw;
+}
+
+.image4 img {
+    width: 37vw;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+.faq h2 {
+    font-size: 50px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.faq div {
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #2d2d2d;
+    padding: 0px 20px;
+    width: 75%;
+    margin: auto;
+}
+
+.faq div p {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.faq h3 {
+    padding-top: 40px;
+    width: 77vw;
+    margin: auto;
+}
+
+.space {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.footer {
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.list ul {
+    background-color: black;
+    width: 77vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.list ul li a,
+.footer p,
+.footer p a {
+    font-size: 14px;
+    color: rgb(173, 173, 173);
+}
+
+.list ul li {
+    list-style: none;
+    padding: 5px;
+    width: 18vw;
+    margin-bottom: 5px;
+}
+
+.footer .p {
+    padding-top: 50px;
+    margin-left: 11.3vw;
+    margin-bottom: 15px;
+}
+
+.space2 {
+    margin-left: 11.2vw;
+}
+
+
+.p2 {
+    padding-top: 20px;
+    margin-left: 11.3vw;
+    padding-bottom: 50px;
+}
+
+.html {
+    overflow: hidden;
+}
+
+@media (max-width:1275px) {
+    nav {
+        width: 95%;
+    }
+
+    .show {
+        width: 100%;
+        height: 40vw;
+        margin: auto;
+        padding: 10px 0px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        width: 47%;
+    }
+
+    .image {
+        width: 47%;
+    }
+
+    .image img {
+        position: relative;
+        left: 5vw;
+        width: 38vw;
+        height: 29vw;
+        border-right: 30px solid black;
+    }
+
+    .image video {
+        width: 30VW;
+        position: relative;
+        top: -15.5vw;
+        left: 10vw;
+    }
+
+    .image2 {
+        width: 47%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .banner {
+        width: 27vw;
+        left: 0vw;
+    }
+
+    .image3 img {
+        position: relative;
+        z-index: 10;
+        left: -1vw;
+        top: 10vw;
+        height: inherit;
+        width: 47vw;
+    }
+
+    .image3 video {
+        position: relative;
+        top: -23vw;
+        left: 7vw;
+        width: 30vw;
+    }
+
+    .image4 img {
+        width: 45vw;
+    }
+
+    .faq div {
+        width: 92%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .list ul {
+        width: 92vw;
+    }
+
+    .list ul li {
+        width: 21vw;
+    }
+
+    .footer .p,
+    .space2,
+    .p2 {
+        margin-left: 3.7vw;
+    }
+}
+
+
+
+@media (max-width:952px) {
+    main {
+        height: 70vh;
+    }
+
+    .logo {
+        width: 90px;
+        height: 25px;
+    }
+
+    select {
+        padding: 5px 28px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+    .sbutton {
+        padding: 6px 11px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .span1 {
+        font-size: 30px;
+    }
+
+    .span2 {
+        font-size: 20px;
+    }
+
+    .span3 {
+        font-size: 18px;
+    }
+
+    .content {
+        top: 25vh;
+    }
+
+    .showr {
+        width: 100%;
+        height: 75vh;
+        padding: 100px 0px;
+        flex-direction: column-reverse;
+    }
+
+    .showc {
+        width: 100%;
+        height: 75vh;
+        padding: 100px 0px;
+        flex-direction: column;
+    }
+
+    .text {
+        position: relative;
+        top: -40px;
+        width: 90%;
+        height: 25vh;
+        line-height: 24px;
+        margin-top: 130px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center div {
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .center span {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .image {
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .image img {
+        margin-top: 200px;
+        top: 0px;
+        width: 600px;
+        height: 500px;
+    }
+
+    .image video {
+        width: 520px;
+        top: -400px;
+        left: 20px;
+    }
+
+    .showr .text {
+        margin-top: 20px;
+    }
+
+    .image2 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 70%;
+    }
+
+    .image2 img {
+        position: relative;
+        top: 0px;
+        width: 630px;
+        left: 5vw;
+    }
+
+    .banner {
+        width: 440px;
+        height: 90px;
+        top: -120px;
+        left: 3.5vw;
+    }
+
+    .banner :nth-child(1) img {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .banner :nth-child(3) img {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .image3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image3 img {
+        top: -20px;
+        width: 650px;
+    }
+
+    .image3 video {
+        left: -3vw;
+        top: -450px;
+        width: 400px;
+    }
+
+    .image4 img {
+        width: 600px;
+    }
+
+    .faq div {
+        width: 85vw;
+        font-size: 18px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .list ul li {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 38vw;
+    }
+}
+
+
+@media (max-width:720px) {
+    nav {
+        width: 90%;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .email input {
+        box-sizing: border-box;
+        height: 22px;
+        width: 50%;
+        height: 50px;
+        padding-left: 10px;
+    }
+
+    .show {
+        height: 80vw;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        margin: 0px;
+        left: 3vw;
+        top: 7vw;
+        width: 86vw;
+        height: 66vw;
+    }
+
+    .image video {
+        margin: 0px;
+        width: 63VW;
+        top: -45vw;
+        left: 0vw;
+    }
+
+    .showc {
+        padding: 130px 0px;
+    }
+
+    .image2 {
+        width: 90%;
+    }
+
+    .image2 img {
+        width: 97%;
+        position: relative;
+        left: 0vw;
+    }
+
+    .banner {
+        width: 50vw;
+        height: 60px;
+        top: -18vw;
+        left: 0vw;
+    }
+
+    .btext {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .banner :nth-child(2) {
+        width: 70%;
+        color: blue;
+    }
+
+    .banner p {
+        font-size: .8rem;
+    }
+
+    .banner :nth-child(1) img {
+        width: 37px;
+        height: 50px;
+    }
+
+    .banner :nth-child(3) img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .image3 video {
+        top: -53vw;
+        left: 0vw;
+        width: 54vw;
+    }
+
+    .image4 img {
+        width: 90vw;
+    }
+
+    .faq div {
+        font-size: 18px;
+        padding: 0px 18px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .list ul li {
+        width: 30vw;
+    }
+
+    .footer .p,
+    .p2,
+    .space2 {
+        margin-left: 7vw;
+    }
+
+    .email button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email input {
+        width: 80vw;
+    }
+
+    main {
+        height: 76vh;
+    }
+
+}
